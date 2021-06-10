@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Orelega+One&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Best Online Gadget Store</title>
+</head>
+<body>
+    <div id="dark"></div>
+    <!-- =========================
+    ====INTRO SECTION
+    =============================== -->
+    <div id="intro">
+        <!-- NAVIGATION -->
+        <div class="container">
+            <div id="navbar">
+                <img src="./Images/EMS.svg" alt="">
+                <ul>
+                    <li><a href="#intro">Intro</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#shop">Shop</a></li>
+                </ul>
+                <button class="btn cart-btn">
+                    <img src="./Images/cart.svg" alt="">
+                    <p id="cart-count">0</p>
+                </button>
+                <!-- TRANSACTION BOX -->
+                <div id="transaction-box">
+                    <div class="box-content">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>S/N</th>
+                                    <th>Items</th>
+                                    <th>Price</th>
+                                    <th>Quantity</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                
+                            </tbody>
+                        </table>
+                        
+                        <form action="">
+                            <input type="text" placeholder="Your Name" id="name">
+                            <p id="name-error"></p>
+                            <input type="email" placeholder="Your Email" id="email">
+                            <p id="email-error"></p>
+                            <input placeholder="Your Phone Number" id="phone">
+                            <p id="phone-error"></p>
+                        </form>
+                        <h3>Total Amount to be Paid</h3>
+                        <h3><span>&#8358;</span><span class="total" id="total">0</span></h3>
+                        <div class="transaction-btn-div">
+                            <button class="transaction-btn" id="continue-btn">Continue Shopping</button>
+                            <button class="transaction-btn" id="checkout-btn">Checkout</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- BANNER -->
+            <div id="banner">
+                <h1 class="banner-grid">THE E-MILLENIAL STORE</h1>
+                <img src="./Images/heroImage.png" alt=""  class="banner-grid" id="banner-img">
+            </div>
+            <div class="banner-btn-div">
+                <a href="#shop" class="btn banner-btn">Shop Now</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- =============================
+    ====ABOUT SECTION
+    ================================== -->
+    <div id="about">
+        <div class="container">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem odit modi et, reiciendis cum dicta odio distinctio ex minima nemo officiis saepe commodi nobis debitis at ducimus iste nihil dolorum amet delectus numquam. Provident eaque repellendus dolorem veniam doloremque culpa id. Cum, fugiat dignissimos. Sequi hic totam consectetur blanditiis facilis voluptas modi, eveniet iusto rerum suscipit? Nulla, atque. Nihil, repellendus.
+        </div>
+    </div>
+
+    <!-- ==============================
+    ====SHOP SECTION
+    =================================== -->
+    <div id="shop">
+        <h1>OUR GADGETS</h1>
+        <div class="products-div container">
+            <div class="product" id="product-1">
+                <div class="img-div">
+                    <img src="./Images/product1.png" alt="">
+                    <div class="product-overlay">
+                        <h3 class="item-name">SAMSUNG TV</h3>
+                        <h3 class="item-price"><span>&#8358;</span>690,000</h3>
+                    </div>
+                </div>
+                <h3 class="product-name">SAMSUNG TV</h3>
+                <button class="btn product-btn">ADD TO CART</button>
+            </div>
+            <div class="product" id="product2">
+                <div class="img-div">
+                    <img src="./Images/product2.png" alt="">
+                    <div class="product-overlay">
+                        <h3 class="item-name">PIXEL 4a</h3>
+                        <h3 class="item-price"><span>&#8358;</span>199,000</h3>
+                    </div>
+                </div>
+                <h3 class="product-name">PIXEL 4a</h3>
+                <button class="btn product-btn">ADD TO CART</button>
+            </div>
+            <div class="product" id="product3">
+                <div class="img-div">
+                    <img src="./Images/product3.png" alt="">
+                    <div class="product-overlay">
+                        <h3 class="item-name">PS 5</h3>
+                        <h3 class="item-price"><span>&#8358;</span>500,000</h3>
+                    </div>
+                </div>
+                <h3 class="product-name">PS 5</h3>
+                <button class="btn product-btn">ADD TO CART</button>
+            </div>
+            <div class="product" id="product4">
+                <div class="img-div">
+                    <img src="./Images/product4.png" alt="">
+                    <div class="product-overlay">
+                        <h3 class="item-name">MACBOOK AIR</h3>
+                        <h3 class="item-price"><span>&#8358;</span>1,200,000</h3>
+                    </div>
+                </div>
+                <h3 class="product-name">MACBOOK AIR</h3>
+                <button class="btn product-btn">ADD TO CART</button>
+            </div>
+            <div class="product" id="product5">
+                <div class="img-div">
+                    <img src="./Images/product5.png" alt="">
+                    <div class="product-overlay">
+                        <h3 class="item-name">APPLE WATCH</h3>
+                        <h3 class="item-price"><span>&#8358;</span>140,000</h3>
+                    </div>
+                </div>
+                <h3 class="product-name">APPLE WATCH</h3>
+                <button class="btn product-btn">ADD TO CART</button>
+            </div>
+            <div class="product" id="product6">
+                <div class="img-div">
+                    <img src="./Images/product6.png" alt="">
+                    <div class="product-overlay">
+                        <h3 class="item-name">AIR PODS</h3>
+                        <h3 class="item-price"><span>&#8358;</span>60,000</h3>
+                    </div>
+                </div>
+                <h3 class="product-name">AIR PODS</h3>
+                <button class="btn product-btn">ADD TO CART</button>
+            </div>
+        </div>
+        <div class="products-div container">
+            
+        </div>
+    </div>
+
+    <!-- ==============================
+    ====SUMMARY SECTION
+    =================================== -->  
+    <div id="summary-box">
+        <div class="box-content">
+            <h3 id="summary-note"></h3>
+            <img src="./Images/check.svg" alt="" id="summary-check">
+            <h3 id="summary-table-header">Summary</h3>
+            <table id="summary-table">
+                <thead>
+                    <tr>
+                        <th>S/N</th>
+                        <th>Items</th>
+                        <th>Quantity</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            </table>
+
+            <button class="transaction-btn" id="summary-btn">Ok</button>
+        </div>
+    </div>
+
+    <!-- ==============================
+    ====FOOTER SECTION
+    =================================== -->
+    <div id="footer">
+        <div class="container">
+            <img src="./Images/EMS.svg" alt="">
+            <p>Designed and Crafted by Ghaalib99</p>
+        </div>
+    </div>
+
+    
+    <script src="https://js.paystack.co/v1/inline.js"></script> 
+    <script src="./app.js"></script>
+</body>
+</html>

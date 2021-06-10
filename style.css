@@ -1,0 +1,440 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+}
+
+#dark{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: none;
+}
+
+.btn{
+    background-color: #ff9a3d;
+    outline: none;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+    padding: 30px 0;
+}
+
+h1, h3, h4{
+    font-family: 'Oswald';
+}
+
+a, p{
+    font-family: "Roboto";
+}
+
+#intro{
+    background-color: #ffe9d6;
+    padding: 3% 0;
+}
+
+#navbar{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+#navbar ul{
+    display: flex;
+    padding-left: 0;
+    margin-right: 20%;
+    margin-left: 20%;
+}
+
+#navbar ul li{
+    margin: 0 25%;
+    list-style-type: none;
+}
+
+#navbar ul li a{
+    text-decoration: none;
+    font-size: 1.4em;
+    font-weight: bolder;
+    color: #000;
+}
+
+#navbar ul li a:hover{
+    color: blue;
+}
+
+
+
+.cart-btn{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 6px;
+    margin-left: auto;
+    width: 100px;
+    height: 45px;
+    border: 0;
+    border-radius: 38px;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.cart-btn img{
+    height: 35px;
+}
+
+.cart-btn p{
+    margin-top: 10%;
+}
+
+/* TRANSACTION BOX */
+#transaction-box{
+    position: absolute;
+    top: 20px;
+    left: 33%;
+    width: 650px;
+    background-color: #fff;
+    padding: 6px;
+    margin: auto;
+    height: auto;
+    display: none;
+    z-index: 1;
+}
+
+table{
+    width: 95%;
+    text-align: center;
+    /* display: block; */
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+thead {
+    /* display: block; */
+    width: 100%;
+}
+
+tbody {
+    /* display: block; */
+    width: 100%;
+}
+
+tr{
+    height: 50px;
+}
+
+.quantity-btn{
+    background-color: #ff9a3d;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    color: #fff;
+    width: 30px;
+    cursor: pointer;
+}
+
+.remove-btn{
+    background-color: #ffe9d6;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    cursor: pointer;
+    height: 35px;
+    width: 100px;
+    font-weight: bolder;
+}
+
+form input{
+    display: block;
+    width: 80%;
+    height: 35px;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 2px 0;
+    border-top: 2px solid;
+    border-bottom: 1px solid;
+    border-left: 2px solid;
+    background-color: #ffe9d6 !important;
+}
+
+#name-error, #email-error, #phone-error{
+    text-align: center;
+    color: red;
+}
+
+.box-content h3{
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 35px;
+}
+
+.transaction-btn-div{
+    text-align: end;
+}
+
+.transaction-btn{
+    width: 150px;
+    height: 50px;
+    border: none;
+    border-radius: 8px;
+    margin-left: auto;
+    outline: none;
+    cursor: pointer;
+}
+
+#continue-btn{
+    background-color: #ffe9d6;
+}
+
+#checkout-btn{
+    background-color: #ff7a00;
+    color: white;
+}
+
+/* SUMMARY BOX */
+#summary-box{
+    position: absolute;
+    top: 20px;
+    left: 33%;
+    width: 650px;
+    background-color: #fff;
+    padding: 20px;
+    margin: auto;
+    height: auto;
+    display: none;
+    z-index: 1;
+}
+
+#summary-table-header{
+    font-size: 1.8rem;
+}
+
+#summary-btn{
+    display: block;
+    background-color: #ff7a00;
+    color: white;
+    
+}
+
+#summary-check{
+    display: block;
+    margin: auto;
+    width: 200px;
+}
+
+/* BANNER */
+#banner{
+    margin-top: 6%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#banner h1{
+    color: #ff7a00;
+    font-weight: bolder;
+    letter-spacing: 0.8rem;
+    margin: 10% 0;
+    font-size: 60px;
+    flex: 1 0 0%;
+}
+
+#banner img{
+    flex: 1 0 0%;
+    width: 70%;
+}
+
+.banner-btn-div{
+    text-align: center;
+}
+
+.banner-btn{
+    margin: auto;
+    display: block;
+    width: 300px;
+    height: 50px;
+    padding: 14px;
+    border-radius: 8px;
+    border: none;
+    color: #fff;
+    font-size: 1em;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+/* ABOUT */
+#about{
+    /* clear: both; */
+    background-color: #000;
+    color: #fff;
+    padding: 5% 0;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+/* SHOP */
+#shop h1{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 1.6em;
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+
+.products-div{
+    display: flex;
+    flex-flow: row wrap;
+    padding: 3% 0;
+}
+
+.product{
+    flex: 1 0 33.33333%;
+    text-align: center;
+    margin-bottom: 15px;
+    margin-bottom: 10%;
+    width: 33% !important;
+}
+
+.img-div{
+    position: relative;
+    overflow: hidden;
+    /* margin: 0 5%; */
+}
+
+ .product-overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color:rgba(0, 0, 0, 0.9);
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+    padding: 70px 0;
+    font-size: 1.3em;
+    opacity: 0;
+    text-align: center;
+    border-radius: 8px;
+} 
+
+.product-overlay:hover{
+    opacity: 1;
+}
+
+.product h3{
+    text-align: center;
+    font-size: 1.6em;
+}
+
+.product-btn{
+    width: 300px;
+    height: 45px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+#footer{
+    background-color: #000;
+    height: 200px;
+    color: #fff;
+    padding: 3% 0;
+    
+}
+
+#footer .container{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+
+#footer img{
+    width: 200px;
+    height: 100px;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 1124px) {
+    .product{
+        flex: 1 0 33.33333%;
+        text-align: center;
+        margin-bottom: 15px;
+        margin-bottom: 10%;
+        width: 66% !important;
+    }
+}
+
+@media screen and (max-width: 970px) {
+    .container{
+        width: 95%;
+        margin: auto;
+        padding: 30px 0;
+    }
+
+    #navbar{
+        display: block;
+    }
+
+    .cart-btn{
+        position: absolute;
+        top: 60px;
+        right: 30px;
+    }
+
+    #navbar ul{
+        display: block;
+        width: 100%;
+        margin: 0;
+    }
+
+    #navbar ul li{
+        width: 100%;
+        height: 50px;
+        background-color: #ff9a3d;
+        text-align: center;
+        margin: 3px 0;
+        padding-top: 10px;
+    }
+
+    #navbar ul li a{
+        
+    }
+
+    #banner{
+        display: block;
+    }
+
+    #banner h1{
+        margin: 30px;
+        font-size: 1.6em;
+        text-align: center;
+    }
+
+    #banner-img{
+        padding-left: 30%;
+        width: 90%;
+    }
+
+
+    #footer{
+        padding: 5px;
+    }
+
+    #footer .container{
+        display: block;
+        text-align: center;
+    }
+}
